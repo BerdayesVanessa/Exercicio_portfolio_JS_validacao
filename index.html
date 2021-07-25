@@ -4,57 +4,171 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mim</title>
+    <title>Portfolio Vanessa Berdayes</title>
+    <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-    <fieldset>
-        <header>
-            <a href="index.html"><input type="button" value="Sobre Mim"></a>
-            <a href="index_formacao.html"><input type="button" value="Formação"></a>
-            <a href="index_frontend.html"><input type="button" value="Front-End"></a>
-            <a href="index_engenheira.html"><input type="button" value="Engenheira"></a>   
-            <a href="index_contato.html"><input type="button" value="Contato"></a>
-        </header>
-    </fieldset>
+    <header class="cabecalho">
+        <a href="#apresentacao" class="botao">Apresentação</a>
+        <a href="#formacao" class="botao">Formação</a>
+        <a href="#experiencia" class="botao">Experiência</a>
+        <a href="#projetos" class="botao">Projetos</a>   
+        <a href="#contato" class="botao">Contato</a>  
+    </header>
 
-<p>
+    <div class="imagem__principal">
+        falta colocar imagen principal
 
-</p>
+    </div>
 
-    <fieldset>
-    <section aria-label="Sobre Mim">
-        <h1>Sobre Mim</h1>
-            <p>Seja bem-vindo ao meu portfólio. Meu nome é <strong>Vanessa Berdayes</strong>, sou venezuelana, filha da Salomé, esposa do Samuel e mãe do Gustavo.</p>
-            <p>Moro no Brasil há 4 anos e recentemente estou descobrindo uma nova paixão como desenvolvedora Front – End.</p> 
-            <p>Também possuo graduação em Engenharia de Minas e pós-graduação em Gerenciamento de Projetos.</p>
-      
-        <img src="fotos portafolio/salome2.jpg" alt="Sou filha da Salomé" widht="200" height="200">
-        <img src="fotos portafolio/casamento.JPG" alt="Esposa do Samuel" widht="200" height="200">
-        <img src="fotos portafolio/gustavo.jpg" alt="Mãe do Gustavo" widht="400" height="200">  
-    </section>
+<div class="apresentacao" id="apresentacao">
+    <p class=apresentacao__nome">
+        <h1 class="nome">Vanessa Berdayes</h1>
+        <h2 class="profissao">Desenvolvedora Front-End</h2>
+    </p>
+    <p>Seja bem-vindo ao meu portfólio. Meu nome é <strong>Vanessa Berdayes</strong>, sou venezuelana, filha da Salomé, esposa do Samuel e mãe do Gustavo.</p>
+    <p>Moro no Brasil há 4 anos e recentemente estou descobrindo uma nova paixão como desenvolvedora Front – End.</p> 
+    <p>Também possuo graduação em Engenharia de Minas e pós-graduação em Gerenciamento de Projetos.</p>
 
-    <hr></hr>
+    <img src="fotos portafolio/salome2.jpg" alt="Sou filha da Salomé" widht="200" height="200">
+    <img src="fotos portafolio/casamento.JPG" alt="Esposa do Samuel" widht="200" height="200">
+    <img src="fotos portafolio/gustavo.jpg" alt="Mãe do Gustavo" widht="400" height="200">  
+</div>
 
-    <section aria-label="CV">
-        <h1>Curriculum</h1>
-       <p>
-          <a href="fotos portafolio/CV Vanessa Berdayes toti.pdf"><input type="button" value="Download CV"></a>
-       </p>
-    </section>
-    </fieldset>
+<div class="formacao" id="formacao">
+    <h1>Formação</h1>
+    <ul>
+        <p>
+        <li><strong>Desenvolvedora Front – End.</strong></li>
+        _Toti. Brasil. (Atual).
+        </p>
 
-    <p></p>
+        <p>
+        <li><strong>Especialista em Gerenciamento de Projetos.</strong></li>
+        Universidade Católica Andrés Bello. Venezuela. (2012 – 2015).
+        </p> 
 
-    <section aria-label="Me encontre aqui">
-        <fieldset>
-        <h1>Me encontre aqui</h1>
-        <ul>
-             <a href="https://www.linkedin.com/in/vanessa-berdayes/" target="_blank"><img src="fotos portafolio/icone linkedin.png"widht="30" height="30"></a>
-             <a href="https://github.com/BerdayesVanessa" target="_blank"><img src="fotos portafolio/icone github.png"widht="30" height="30"></a>
-        </ul>
-    </fieldset>
-    </section>
+        <p>
+        <li><strong>Engenharia de Minas.</strong></li>
+        Universidade de Oriente Núcleo Bolívar. Venezuela. (2004 – 2010).
+        </p> 
+    </ul>
+</div>
+
+<hr>
+
+<div class="experiencia" id="experiencia">
+    <h1>Experiência</h1>
+    <ul>
+        <p>
+        <li><strong>Engenheira de Planejamento</strong></li>
+        Andrade Gutierrez Engenharia S.A. Venezuela. (01/2015 – 11/2016).
+        </p>
+            
+        <p>
+        <li><strong>Engenheira de Perfuração e Detonação</strong></li>
+        Andrade Gutierrez Engenharia S.A. Venezuela. (07/2013 – 01/2015).
+        </p>
+
+        <p>
+        <li><strong>Engenheira de Qualidade</strong></li>
+        Gerenpro C.A Venezuela. (12/2010 – 07/2011).
+        </p>
+    </ul>
+</div>
+    
+
+<section class="projetos" id="projetos">
+    <div class="container_projetos">
+    <h1>Projetos</h1>
+        <div class="cards">
+            <div class="card">
+                <img src="img flores roxo.jpg" alt="Portfólio" class="card__imagem">
+                <h1 class="card__titulo">Portfólio com CSS</h1>
+                <p class="card__descricao">Estilização com CSS de um Portfólio feito em HTML.</p>
+                <div class="card__boton">
+                    <a href="https://github.com/BerdayesVanessa/Exercicio_Portfolio" target="_blank"><input type="button" value="Repositorio"></a>
+                    <a href="https://berdayesvanessa.github.io/Exercicio_Portfolio/" target="_blank"><input type="button" value="Ver Demo"></a>
+                </div>
+            </div>
+    
+
+            <div class="card">
+                <img src="img flores roxo.jpg"   alt="Portfólio" class="card__imagem">
+                <h1 class="card__titulo">Portfólio em HTML</h1>
+                <p class="card__descricao">Meu primeiro projeto de um Portfólio em HTML.</p>
+                <div class="card__boton">
+                    <a href="https://github.com/BerdayesVanessa/Exercicio_Portfolio" target="_blank"><input type="button" value="Repositorio"></a>
+                    <a href="https://berdayesvanessa.github.io/Exercicio_Portfolio/" target="_blank"><input type="button" value="Ver Demo"></a>
+                </div>
+            </div>
+    
+
+            <div class="card">
+                <img src="img flores roxo.jpg"  alt="Layout" class="card__imagem">
+                <h1 class="card__titulo">Layout</h1>
+                <p class="card__descricao">Layout responsivo utilizando HTML e CSS.</p>
+                <div class="card__boton">
+                    <a href="https://github.com/BerdayesVanessa/Exercicio_blog_CSS" target="_blank"><input type="button" value="Repositorio"></a>
+                    <a href="https://berdayesvanessa.github.io/Exercicio_blog_CSS/" target="_blank"><input type="button" value="Ver Demo"></a>
+                </div>
+            </div>
+  
+
+            <div class="card">
+                <img src="bolo de milho.jpg" alt="imagem de um bolo de milho" class="card__imagem">
+                <h1 class="card__titulo">Receita bolo de milho</h1>
+                <p class="card__descricao">Estilização com CSS de uma receita culinária feita em HTML.</p>
+                <div class="card__boton">
+                    <a href="https://github.com/BerdayesVanessa/Exercicio_receita_CSS" target="_blank"><input type="button" value="Repositorio"></a>
+                    <a href="https://berdayesvanessa.github.io/Exercicio_receita_CSS/" target="_blank"><input type="button" value="Ver Demo"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="contato">
+    <div class="contact-letf">
+        <h1>Contato</h1>
+            <div class="contact-description">
+                <p>Quer entrar em contato comigo?</p>
+                <p>Preencha o formulário a seguir e entrarei em contato o mais rápido possível. </p>
+                <P>Também pode me encontrar nas seguintes redes sociais:</P>
+
+                <nav class="social-media">
+                    <ul>
+                        <li>
+                            <div class="social-media-img">
+                                <img src="img/linkedin.png" alt="img-linkedin">
+                            </div>
+                            
+                            <a href="https://www.linkedin.com/in/luis-quesada-gonzalez/">LinkedIn</a>
+                        <li>
+
+                        <li>
+                            <div class="social-media-img">
+                                <img src="img/whatsapp.png" alt="Whatsapp">
+                            </div>
+                            
+                            <a href="https://wa.me/5521971258464">WhatsApp</a>
+                        <li>
+
+                        <li>
+                            <div class="social-media-img">
+                                <img src="img/instagram.png" alt="img-instagram">
+                            </div>
+                            
+                            <a href="https://www.instagram.com/luis_quesada/"   >Instagram</a>
+                        <li>
+    
+                    </ul>        
+                </nav>
+
+            </div>
+        </div>
+</footer>
 
 </body>
 </html>
-
