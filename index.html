@@ -16,25 +16,25 @@
         <a href="#contato" class="botao">Contato</a>  
     </header>
 
-    <div class="imagem__principal">
-        falta colocar imagen principal
-
-    </div>
-
-<div class="apresentacao" id="apresentacao">
-    <p class=apresentacao__nome">
+    <div class="avatar">
+        <img src="fotos portafolio/foto vanessa toti.jpg" class="imagem__principal" alt="imagem da Vanessa">
         <h1 class="nome">Vanessa Berdayes</h1>
         <h2 class="profissao">Desenvolvedora Front-End</h2>
-    </p>
-    <p>Seja bem-vindo ao meu portfólio. Meu nome é <strong>Vanessa Berdayes</strong>, sou venezuelana, filha da Salomé, esposa do Samuel e mãe do Gustavo.</p>
-    <p>Moro no Brasil há 4 anos e recentemente estou descobrindo uma nova paixão como desenvolvedora Front – End.</p> 
-    <p>Também possuo graduação em Engenharia de Minas e pós-graduação em Gerenciamento de Projetos.</p>
-
-    <img src="fotos portafolio/salome2.jpg" alt="Sou filha da Salomé" widht="200" height="200">
-    <img src="fotos portafolio/casamento.JPG" alt="Esposa do Samuel" widht="200" height="200">
-    <img src="fotos portafolio/gustavo.jpg" alt="Mãe do Gustavo" widht="400" height="200">  
+    </div>
+    <div class="apresentacao">
+        <div class="apresentacao" id="apresentacao">
+            <p>Olá! Seja bem-vindo ao meu portfólio. </p>
+            <p> Meu nome é <strong>Vanessa Berdayes</strong>, sou venezuelana, filha da Salomé, esposa do Samuel e mãe do Gustavo.</p>
+            <p>Moro no Brasil há 4 anos e recentemente estou descobrindo uma nova paixão como desenvolvedora Front – End.</p>
+            <p>Também possuo graduação em Engenharia de Minas e pós-graduação em Gerenciamento de Projetos.</p>
+            <div class="container__apresentacao__img">
+                <img src="fotos portafolio/salome2.jpg" class="apresentacao__imagens" alt="Imagem filha da Salomé">
+                <img src="fotos portafolio/casamento.JPG" class="apresentacao__imagens" alt="Imagem esposa do Samuel">
+                <img src="fotos portafolio/gustavo.jpg" class="apresentacao__imagens" alt="Imagem mãe do Gustavo">  
+            </div>
+        </div>
+    </div> 
 </div>
-
 <div class="formacao" id="formacao">
     <h1>Formação</h1>
     <ul>
@@ -79,7 +79,7 @@
     
 
 <section class="projetos" id="projetos">
-    <div class="container_projetos">
+<div class="container__projetos">
     <h1>Projetos</h1>
         <div class="cards">
             <div class="card">
@@ -94,7 +94,7 @@
     
 
             <div class="card">
-                <img src="img flores roxo.jpg"   alt="Portfólio" class="card__imagem">
+                <img src="fotos portafolio/foto vanessa toti.jpg"   alt="Portfólio" class="card__imagem">
                 <h1 class="card__titulo">Portfólio em HTML</h1>
                 <p class="card__descricao">Meu primeiro projeto de um Portfólio em HTML.</p>
                 <div class="card__boton">
@@ -125,49 +125,37 @@
                 </div>
             </div>
         </div>
-    </div>
+   
 </section>
 
 
-<footer class="contato">
-    <div class="contact-letf">
-        <h1>Contato</h1>
-            <div class="contact-description">
-                <p>Quer entrar em contato comigo?</p>
-                <p>Preencha o formulário a seguir e entrarei em contato o mais rápido possível. </p>
-                <P>Também pode me encontrar nas seguintes redes sociais:</P>
-
-                <nav class="social-media">
-                    <ul>
-                        <li>
-                            <div class="social-media-img">
-                                <img src="img/linkedin.png" alt="img-linkedin">
-                            </div>
-                            
-                            <a href="https://www.linkedin.com/in/luis-quesada-gonzalez/">LinkedIn</a>
-                        <li>
-
-                        <li>
-                            <div class="social-media-img">
-                                <img src="img/whatsapp.png" alt="Whatsapp">
-                            </div>
-                            
-                            <a href="https://wa.me/5521971258464">WhatsApp</a>
-                        <li>
-
-                        <li>
-                            <div class="social-media-img">
-                                <img src="img/instagram.png" alt="img-instagram">
-                            </div>
-                            
-                            <a href="https://www.instagram.com/luis_quesada/"   >Instagram</a>
-                        <li>
+<footer class="contato" id="contato">
+    <div class="contato__fotmulario">
+        <h1>Formulario para contato</h1>
+        <p>
+            <label>
+                <strong>Nome</strong>
+                <input class="datos" type="text" nome="nome" requerid>
+            </label>
+        </p>
     
-                    </ul>        
-                </nav>
+        <p>
+            <label>
+                <strong>E-mail</strong>
+                <input class="datos" type="text" nome="E-mail" requerid>
+            </label>
+        </p>
+    
+        <p>
+            <label>
+                <strong>Mensagem</strong>
+                <textarea class="datos"name="Mensagem" cols="30" rows="10"></textarea>
+            </label>
+        </p>
+         
+        <button class="botao" type="submit">Enviar mensagem</button>
+    </div>
 
-            </div>
-        </div>
 </footer>
 
 </body>

@@ -1,3 +1,10 @@
+html, head, body{
+    padding:0;
+    margin:0;
+    box-sizing: 0;
+    width: 100vw;
+}
+
 body{
     display: grid;
     grid-template-rows: ; 
@@ -12,8 +19,8 @@ body{
     text-align: center;
     position: fixed;
     padding-top: 40px;
-   
 }
+   
 
 .botao {
     font-family: Segoe UI, Regular, sans-serif;
@@ -25,7 +32,7 @@ body{
     border-style: solid;
     border-width: 1px;
     display: inline flex;
-    align-items: center;
+    align-items: right;
     width: fit-content;
     padding-left: 16px;
     padding-right: 16px;
@@ -33,7 +40,6 @@ body{
     padding-bottom: 5px;
     text-decoration: none;
     cursor: pointer;
-    box-shadow: 0 1px 2px 0 rgba(0 0 0 / 12%);
 }
 
 h1{
@@ -41,31 +47,47 @@ h1{
     font-size: 20px; 
 }
 
-.apresentacao__nome{
-    line-height: 100%;
+.avatar{
+    width: 100vw;
+    height:auto;
+    padding-top: 110px;
+    background-color: #80AEBE; 
+  
 }
+
+.imagem__principal{
+    margin-top: -80px;
+    margin-left: 60px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    object-fit: cover;
+
+}
+
 .nome{
+    margin-top: 70px;
+    padding-left: 25px;
     font-family: Segoe UI, Regular, sans-serif;
     font-size: 28px; 
+ 
 }
 
 .profissao{
     font-family: Segoe UI, regular, sans-serif;
     font-size: 16px;  
     font-style: italic;
-}
-
-.imagem__principal{
-    background-color: #80AEBE;
-    height: 150px;
-    padding: 2rem;
+    margin-top: -20px;
+    padding-left: 40px;
+ 
 }
 
 .apresentacao{
-    background-color: #80AEBE;
+    background-color: #80AEBE; 
     width: 100vw;
     height: auto;
-    padding: 2rem;
+    padding-left: 20px;
 }
 
 h2{
@@ -73,32 +95,49 @@ h2{
     font-weight: 600;
 }
 
+.container__apresentacao__img{
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    padding: 20px;
+}
+
+.apresentacao__imagens{
+    width: 15vw;
+    height: 30vh;
+    border-radius: 20%;
+    object-fit: cover;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 20px;
+    
+}
+    
 .formacao{
     background-color: #F3F2EF; 
     padding: 2rem;
 }
 
 .experiencia{
-    background-color: #F3F2EF;
+    background-color: #f3f2eff5;
     padding: 2rem;
 }
 
 .container_projetos{
     width: 100vw;
     height: auto;
-    display: flex;
-    justify-content: space-evenly;
     padding-left: 0px;
+    padding: 2rem;
     background-color: #80AEBE;
     flex-wrap: wrap; 
 }
 
 .projetos{
-    display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;  
     background-color: #80AEBE;
+    padding: 2rem;
 
 }
 
@@ -116,7 +155,7 @@ h2{
 .card{
     display: flexbox;
     width: 200px;
-    height: 380px;
+    height: 340px;
     background-color: rgb(255 255 255);
     border-color: black;
     border-radius: 4px;
@@ -135,6 +174,7 @@ h2{
       width:100%;
       height:150px;
       justify-content: center;
+      object-fit: cover;
   }
 
   .card__titulo{
@@ -152,5 +192,18 @@ h2{
 
   .contato{
     background-color: #253A57;
-    padding: 2rem;
-  }
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    }
+
+  .datos{
+    background-color: white;
+    color:black;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+  
