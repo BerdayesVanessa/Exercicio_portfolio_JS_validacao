@@ -245,7 +245,8 @@ h2{
     border-style: solid;
     border-width: 1px;
     margin-left:10px;
-
 }
 
-  
+.errorInput{
+    border: 2px solid rgb(207, 53, 53) !important;
+}

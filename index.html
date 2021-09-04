@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Vanessa Berdayes</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="./src/styles.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -128,29 +128,41 @@
    
 </section>
 
+<section class="github" id="github">
+    <div class="container-github" id="containerGithub">
+      <h1>Repositorios do GitHub</h1>
+    </div>
+</section>
+
 
 <footer class="contato" id="contato">
-    <div class="contato__fotmulario">
+    <form class="contato__fotmulario">
         <h1>Formulario para contato</h1>
+        
+        <div id="mensagemNome"></div>
         <div>
             <label for="nome"> Nome: </label>
-            <input class="datos" type="text" nome="nome" requerid>
+            <input class="datos" id="nome" type="text" nome="nome" requerid>
         </div>
     
+        <div id="mensagemEmail"></div>
         <div>
             <label for="email"> E-mail: </label>
-            <input class="datos" type="text" nome="E-mail" requerid>
+            <input class="datos" id="email" type="text" nome="E-mail" requerid>
         </div>
     
+        <div id="mensagemMensagem"></div> 
         <div>
             <label for="msg"> Mensagem: </label>
-            <textarea class="datos"name="Mensagem" cols="30" rows="10"></textarea>
+            <textarea class="datos" id="mensagem" name="Mensagem" cols="30" rows="10"></textarea>
         </div>
          
-        <button class="botao button" type="submit">Enviar mensagem</button>
-    </div>
+        <div id="mensagemBotaoEnviar"></div>
+        <button class="botao button" id="botaoEnviar" type="submit">Enviar mensagem</button>
+    </form>
 
 </footer>
 
+<script src="./src/script.js"></script>
 </body>
 </html>
