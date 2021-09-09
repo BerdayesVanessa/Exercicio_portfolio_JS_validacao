@@ -204,6 +204,8 @@ h2{
     padding: 2rem;
     box-sizing: border-box;
     line-height: 10%;
+    font-family: Segoe UI, Regular, sans-serif;
+    font-size: 16px;
   }
 
   .container__github{
