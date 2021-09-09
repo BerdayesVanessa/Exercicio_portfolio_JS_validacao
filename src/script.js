@@ -1,52 +1,50 @@
-import "./styles.css";
-
 let botaoEnviar = document.getElementById('botaoEnviar')
+let formulario = document.getElementsByClassName("contato__formulario");
 
 botaoEnviar.addEventListener('click', (event) => {
-    event.preventDefault()
+  let formularioValido = true;
 
-let campoNome = document.getElementById("nome");
-let mensagemNome = document.getElementById("mensagemNome");
+  let campoNome = document.getElementById("nome");
+  let mensagemNome = document.getElementById("mensagemNome");
 
-let campoEmail = document.getElementById("email");
-let mensagemEmail = document.getElementById("mensagemEmail");
+  let campoEmail = document.getElementById("email");
+  let mensagemEmail = document.getElementById("mensagemEmail");
 
-let campoMensagem = document.getElementById("mensagem");
-let mensagemMensagem = document.getElementById("mensagemMensagem");
+  let campoMensagem = document.getElementById("mensagem");
+  let mensagemMensagem = document.getElementById("mensagemMensagem");
 
+  if (campoNome.value.length === 0) {
+    mensagemNome.innerHTML = "Digite seu nome";
+    formularioValido = false;
+    campoNome.classList.add("errorInput");
+  } else {
+    mensagemNome.innerHTML = "";
+    campoNome.classList.remove("errorInput")
+  }
 
-campoNome.value = "";
+  if (campoEmail.value === "") {
+    mensagemEmail.innerHTML = "Digite seu email";
+    formularioValido = false;
+    campoEmail.classList.add("errorInput");
+  } else {
+    mensagemEmail.innerHTML = "";
+    campoEmail.classList.remove("errorInput")
+  }
 
-if (campoNome.value.length === 0) {
-  mensagemNome.innerHTML = "Digite seu nome";
-} else {
-  mensagemNome.innerHTML = "";
-}
+  if (campoMensagem.value.length === 0) {
+    mensagemMensagem.innerHTML = "Digite sua mensagem";
+    formularioValido = false;
+    campoMensagem.classList.add("errorInput");
+  } else {
+    mensagemMensagem.innerHTML = "";
+    campoMensagem.classList.remove("errorInput")
+  }
 
-//campoEmail.value = "";
+  if (!formularioValido){
+    event.preventDefault();
+  }
 
-if (campoEmail.value === "") {
-  mensagemEmail.innerHTML = "Digite seu email";
-} else {
-  mensagemEmail.innerHTML = "";
-}
-
-
-if (campoEmail.value.indexOf("@") === -1 || campoEmail.value.indexOf(".") === -1 || (campoEmail.value.indexOf(".") - campoEmail.value.indexOf("@") === 1)) {
-  campoEmail.classList.add("errorInput")
-} else {
-  campoEmail.classList.remove("errorInput")
-}
-
-
-campoMensagem.value = "";
-
-if (campoMensagem.value.length === 0) {
-  mensagemMensagem.innerHTML = "Digite sua mensagem";
-} else {
-  mensagemMensagem.innerHTML = "";
-}
-});
+  });
 
 
 let promessa = fetch("https://api.github.com/users/BerdayesVanessa/repos");
@@ -61,9 +59,16 @@ promessa
     let nomes = [];
 
     for (let repositorio of repositorios) {
-      nomes.push(
-        "<li>" + repositorio.name + " " + repositorio.svn_url + "</li>"
-      );
+      let url = repositorio.html_url;
+      let nome = repositorio.name;
+
+      nomes.push(`
+      <p>
+        <li>
+          <strong>${nome}</strong> <a href= "${url}"> ${url}</a>
+        </li>
+      </p>
+      `);
     }
     containerRepositorios.innerHTML = nomes;
   });

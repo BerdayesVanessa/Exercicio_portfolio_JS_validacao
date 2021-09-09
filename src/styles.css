@@ -199,19 +199,38 @@ h2{
     text-decoration: none;
   }
 
+  .github{
+    background-color: #F3F2EF; 
+    padding: 2rem;
+    box-sizing: border-box;
+    line-height: 10%;
+  }
+
+  .container__github{
+      margin-top: 50px;
+  }
+
+
   .contato{
     background-color: #253A57;
+    color: #fffff;
     display: flex;
     flex-direction: column;
     padding: 2rem; 
     box-sizing: border-box;
     }
 
+    .contato__titulo{
+    color: white;
+   
+    }
+
     label {
+    color: white;
     display: inline-block;
     width: 90px;
     text-align: right;
-    font-size: 18px;
+    font-size: 14px;
     font-family: Segoe UI, Regular, sans-serif;
     font-weight: bold;
     margin-bottom: 15px;
@@ -225,7 +244,7 @@ h2{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid #999;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     }
 
     textarea {
@@ -249,4 +268,10 @@ h2{
 
 .errorInput{
     border: 2px solid rgb(207, 53, 53) !important;
+}
+
+.mensagemNome,
+.mensagemEmail,
+.mensagemMensagem {
+    color: white;
 }
